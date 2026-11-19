@@ -30,7 +30,7 @@ class Settings(BaseSettings):
 
     scan_interval_seconds: int = 90
     default_capital_usd: Decimal = Decimal("1000")
-    default_min_roi_pct: Decimal = Decimal("5")
+    default_min_roi_pct: Decimal = Decimal("3")  # real KZ prematch arbs are mostly 0.1–3 %
     default_max_quote_age_seconds: int = 20
     min_match_confidence: float = 0.9
     user_country: str = "KZ"
