@@ -163,7 +163,7 @@ class Opportunity(Base):
     title: Mapped[str] = mapped_column(String(512))
     category: Mapped[str] = mapped_column(String(64), index=True)
     market_type: Mapped[str] = mapped_column(String(32))
-    period: Mapped[str] = mapped_column(String(16))
+    period: Mapped[str] = mapped_column(String(64))  # e.g. "regular_time|total=2.5"
     platforms: Mapped[list] = mapped_column(JSON)
     status: Mapped[str] = mapped_column(String(32), index=True)
     roi_pct: Mapped[Decimal | None] = mapped_column(NUM)
@@ -337,7 +337,7 @@ class MatchedEvent(Base):
     sport: Mapped[str] = mapped_column(String(32))
     title: Mapped[str] = mapped_column(String(512))
     market_type: Mapped[str] = mapped_column(String(32))
-    period: Mapped[str] = mapped_column(String(16))
+    period: Mapped[str] = mapped_column(String(64))
     platforms: Mapped[list] = mapped_column(JSON)
     market_ids: Mapped[list] = mapped_column(JSON)
     confidence: Mapped[float] = mapped_column(Float)

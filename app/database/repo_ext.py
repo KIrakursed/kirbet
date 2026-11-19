@@ -75,7 +75,7 @@ async def _save_matches(self, groups, seen_at) -> int:
             m0 = g.markets[0]
             if row is None:
                 s.add(M.MatchedEvent(key=key, sport=m0.category[:32], title=m0.title[:512],
-                                     market_type=m0.market_type.value, period=m0.period[:16],
+                                     market_type=m0.market_type.value, period=m0.period[:64],
                                      platforms=sorted({m.platform for m in g.markets}), market_ids=ids,
                                      confidence=g.confidence, reasons=list(g.reasons)[:10], start_time=m0.start_time,
                                      first_seen=seen_at, last_seen=seen_at))
