@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "rate_per_sec": 8,
+  "cache_ttl_sec": 600,
+  "max_hours_ahead": 72,
+  "series": ["KXATPMATCH", "KXWTAMATCH", "KXATPCHALLENGERMATCH", "KXCHALLENGERMATCH", "KXWTACHALLENGERMATCH",
+             "KXCS2GAME", "KXDOTA2GAME", "KXLOLGAME", "KXVALORANTGAME", "KXVOLLEYBALLMATCH", "KXNCAAWVMATCH"]
+}

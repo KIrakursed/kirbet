@@ -1,0 +1,18 @@
+# virtualenvs / caches
+.venv/
+.venv312/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+# secrets: real values live only in .env on the server
+.env
+.env.*
+!.env.example
+# runtime data: databases, logs, dumps, research output
+data/
+*.db
+*.db-journal
+*.dump
+*.log
+stability/

@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "rate_per_sec": 8,
+  "cache_ttl_sec": 20,
+  "sports": ["tennis", "esports", "volleyball"],
+  "include_nonsport": true,
+  "nonsport_events": 60,
+  "max_hours_ahead": 72,
+  "include_live": true,
+  "periods": ["match", "set1", "set2", "map1", "map2", "map3"]
+}

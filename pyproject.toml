@@ -1,0 +1,18 @@
+[project]
+name = "cross-arb-scanner"
+version = "1.0.0"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "app/providers/bookmakers"]
+markers = ["live: integration tests hitting real public APIs (network required)"]
+addopts = "-q"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B008", "UP017", "B905", "UP042"]

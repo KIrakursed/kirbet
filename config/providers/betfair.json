@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "rate_per_sec": 4,
+  "commission": "0.05",
+  "max_markets": 100
+}

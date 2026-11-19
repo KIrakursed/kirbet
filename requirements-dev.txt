@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest==9.2.0
+pytest-asyncio==1.5.0
+ruff==0.17.5
+playwright==1.65.2  # only for the one-off research scripts in scripts/research_kz_*.py

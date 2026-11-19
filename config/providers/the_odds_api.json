@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "rate_per_sec": 1,
+  "cache_ttl_sec": 3600,
+  "regions": "eu",
+  "markets": "h2h",
+  "min_refresh_minutes": 120,
+  "credit_reserve": 50,
+  "sport_prefixes": ["tennis_"],
+  "bookmakers": [],
+  "exchange_commission": "0.05",
+  "max_sports_per_scan": 4
+}
